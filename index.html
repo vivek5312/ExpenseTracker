@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=., initial-scale=1.0">
     <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </head>
 <body>
-   <div class="tracker">
-    <form  id="my-form">
-    <label >Choose ExpenseAmount</label>
-    <input type="number" id="num">
-    <label >Choose Description</label>
-    <input type="text" id="description">
-    <label > Choose Category</label>
-    <select name="Choose Category" id="Category">
-        <option value="Movies">Movies</option>
-        <option value="Fuel">Fuel</option>
-        <option value="Electricity">Electricity</option>
-        <option value="Rent">Rent</option>
-    
-    </select>
-    <button id="btn">Add Expense</button>
-    
-</form>
-<ul id="list">
-</ul>
-   </div> 
+    <div class="container">
+        <h2>Add Expense</h2>
+        <form id="my-form">
+            <div class="mb-3">
+              <label  class="form-label" id="lb">Expense Amount</label>
+              <input type="number" class="form-control" id="num" >
+            </div>
+            <div class="mb-3">
+              <label class="form-label" >Description</label>
+              <input type="text" class="form-control" id="description">
+            </div class="mb-3">
+            <label class="form-label" >Category</label>
+            <select class="form-select" id="Category">
+              
+                <option value="1">Movies</option>
+                <option value="2">Fuel</option>
+                <option value="3">Rent</option>
+              </select>
+
+            <button type="submit" class="btn btn-primary" id="btn">Submit</button>
+          </form>
+
+          <ul class="list-group" id="list">
+
+          </ul>
+            
+          
+</div>
    <script src="project.js"></script>
 </body>
 </html>

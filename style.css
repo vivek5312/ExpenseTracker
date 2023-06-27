@@ -1,0 +1,21 @@
+.container{
+    margin-top: 20px;
+}
+#btn{
+    margin-top: 50px;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+
+  .form-label{
+    margin-top: 10px;
+    font-weight: bold;
+    font-size:20px
+  }
+
